@@ -31,6 +31,7 @@ export class HeaderComponent implements OnInit {
     { routePath: 'signup', label: 'Signup' },
     { routePath: 'login', label: 'Login' },
     { routePath: 'course', label: 'Course' },
+    { routePath: 'food', label: 'Food' },
   ];
 
   ngOnInit() {
