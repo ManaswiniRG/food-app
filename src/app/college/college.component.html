@@ -1,0 +1,25 @@
+<!-- <button (click)="fetchUniversitiesByCountry('india')">India</button>
+<button (click)="fetchUniversitiesByCountry('canada')">Canada</button>
+<button (click)="fetchUniversitiesByCountry('united states')">
+  United States
+</button> -->
+<form [formGroup]="searchForm">
+  <input
+    type="text"
+    placeholder="Enter Country..."
+    formControlName="countryName"
+  />
+  <!-- <input type="text" placeholder="Enter City..." formControlName="cityName" /> -->
+</form>
+<button [disabled]="!searchForm.valid" (click)="searchByCountry()">
+  Search
+</button>
+
+@if(iserror){
+<div class="error-message">
+  {{ errorMessage }}
+</div>
+} @if(collegeList.length>0) {
+
+<app-college-table [collegeList]="collegeList"></app-college-table>
+}

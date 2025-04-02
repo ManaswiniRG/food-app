@@ -1,0 +1,16 @@
+<div
+  class="card"
+  style="background: linear-gradient(176deg, #a98dff, transparent)"
+>
+  <img [src]="incomingGame.image" [alt]="'some text'" class="card-image" />
+  <div class="card-content">
+    <h2 class="card-title">{{ incomingGame.amiiboSeries }}</h2>
+    <p class="card-description">
+      {{ incomingGame.gameSeries }}
+    </p>
+    <div class="footer-section">
+      <div class="platform-section">{{ incomingGame.character }}</div>
+    </div>
+    <button (click)="addToCart(incomingGame)">Add To Cart</button>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="main">
+  <div class="cards-container">
+    @for (game of gamesList; track $index) {
+    <app-game-card [incomingGame]="game"></app-game-card>
+    }
+  </div>
+</div>

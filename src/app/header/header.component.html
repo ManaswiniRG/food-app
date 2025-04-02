@@ -1,0 +1,28 @@
+<!-- <ul>
+  <li><a class="active" (click)="navigateTo('home')">Home</a></li>
+  <li><a (click)="navigateTo('reservetable')">Reserve Table</a></li>
+  <li><a (click)="navigateTo('viewmenu')">View Menu</a></li>
+  <li><a (click)="navigateTo('contactus')">Contact Us</a></li>
+  <li><a (click)="navigateTo('university')">University</a></li>
+  <li><a (click)="navigateTo('games')">Games</a></li>
+  <li><a (click)="navigateTo('college')">College</a></li>
+  <li><a (click)="navigateTo('signup')">Signup</a></li>
+  <li><a (click)="navigateTo('login')">Login</a></li>
+  <li><a (click)="navigateTo('course')">Course</a></li>
+  <li><a (click)="navigateTo('course')">Course</a></li>
+
+</ul> -->
+{{ name }}
+<button (click)="runFunction()">Change</button>
+<ul>
+  @for(nav of navItems; track $index){
+  <li>
+    <a [routerLink]="nav.routePath" routerLink Active="active-link"
+      >{{ nav.label }}
+    </a>
+  </li>
+  }
+  <!-- <button (clicl)="getUserName()">Get User Info</button> -->
+  <div class="user-name-section">UserName::{{ loggedInUserName }}</div>
+  <div class="user-name-section">Cart Items::{{ noOfItemsAddedToCart }}</div>
+</ul>

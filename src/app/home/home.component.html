@@ -1,0 +1,25 @@
+<p>Home Works!</p>
+<!-- <button (click)="home()">Home</button> -->
+
+{{ name }}
+
+<button (click)="changeTopicName()">Change Topic Name</button>
+
+<button (click)="updateCourseList()">Update Course List</button>
+<button (click)="search()">Search</button>
+<b></b><b></b>
+<button (click)="getDetails('S180', 25)">Details</button>
+<br /><br />
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Vehichle Type</th>
+  </tr>
+  <tr *ngFor="let vehichle of vehichleList">
+    <td>{{ vehichle.MakeId }}</td>
+    <td>{{ vehichle.MakeName }}</td>
+    <td>{{ vehichle.VehicleTypeName }}</td>
+  </tr>
+</table>

@@ -1,0 +1,23 @@
+<form [formGroup]="courseForm">
+  <label for="courseId">Course ID:</label>
+  <input type="text" id="courseId" formControlName="courseId" />
+  <br />
+
+  <label for="title">Title:</label>
+  <input type="text" id="title" formControlName="title" />
+  <br />
+
+  <label for="price">price:</label>
+  <input type="number" id="price" formControlName="price" />
+  <br />
+
+  <label for="categoryType">Category Type:</label>
+  <input type="text" id="categoryType" formControlName="categoryType" />
+  <br />
+
+  <label for="description">Description:</label>
+  <textarea id="description" formControlName="description"></textarea>
+  <br />
+
+  <button (click)="createCourse()">Create Course</button>
+</form>

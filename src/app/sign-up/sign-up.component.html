@@ -1,0 +1,38 @@
+<form [formGroup]="signupForm">
+  <label for="">User Name:</label>
+  <input type="text" name="userName" id="userName" formControlName="userName" />
+  <br />
+
+  <label for="">User Email:</label>
+  <input
+    type="text"
+    name="userEmail"
+    id="userEmail"
+    formControlName="userEmail"
+  />
+  <br />
+
+  <label for="">Password:</label>
+  <input
+    type="password"
+    name="password"
+    id="password"
+    formControlName="password"
+  />
+  <br />
+
+  <label for="">Confirm Password:</label>
+  <input
+    type="password"
+    name="confirmPassword"
+    id="confirmPassword"
+    formControlName="confirmPassword"
+  />
+  <br />
+
+  <label for="">Role:</label>
+  <input type="text" name="role" id="role" formControlName="role" />
+  <br />
+  <br />
+  <button (click)="signUpUser()">Signup</button>
+</form>
