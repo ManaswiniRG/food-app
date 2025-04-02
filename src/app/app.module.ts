@@ -17,6 +17,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { CourseFormComponent } from './course/course.component';
 import { UdemyComponent } from './udemy/udemy.component';
+import { FoodComponent } from './food/food.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { UdemyComponent } from './udemy/udemy.component';
     LogInComponent,
     CourseFormComponent,
     UdemyComponent,
+    FoodComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [provideHttpClient()],
